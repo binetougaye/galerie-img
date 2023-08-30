@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>GALERIE IMAGES</title>
+    <style>
+        #prev,
+        #next,
+        #play,
+        #pause {
+            color: #777;
+            font-size: 2rem;
+            display: inline-block;
+            margin: 1rem;
+        }
+
+        #galery img.hidden {
+            display: none;
+        }
+
+        #title {
+            text-align: center;
+            color: #777;
+            font-size: 3rem;
+        }
+
+        .yellow {
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <button>
+        Hello
+    </button> -->
+    <div class="container">
+        <div class="row justify-content-center text-center align-items-center">
+            <div class="col-12">
+                <h1>Galerie</h1>
+            </div>
+            <div class="col-1" id="prev">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </div>
+            <div class="col-5" id="galery">
+                <img src="rain1.avif" alt="" class="img-fluid">
+                <img src="rain2.avif" alt="" class="img-fluid">
+                <img src="rain3.avif" alt="" class="img-fluid">
+                <img src="rain4.avif" alt="" class="img-fluid">
+            </div>
+            <div class="col-1" id="next">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <span id="play">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                </span>
+                <span id="pause">
+                    <i class="fa fa-pause" aria-hidden="true"></i>
+                </span>
+
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container">
+        <h1 class="title"
+            style="text-align: center; font-size: 3rem; color: #777;font-family: 'Inconsolata', monospace;"></h1>
+    </div> -->
+    <!-- <script>
+        console.log(window);
+        // Permet de voir la largeur de la fenetre
+        console.log(window.innerWidth);
+        // Permet de voir la hauteur de la fenetre
+        console.log(window.innerHeight);
+        console.log("largeur de l'ecran:" + window.innerWidth + "pixel");
+        // Pour debugger et voir tous les éléments html de la page
+        console.log(window.document);
+        // Pour voir le chemin d'accès de la page
+        console.log(document.documentURI);
+        // Méthodes pour sélectionner les éléments du dom
+            // Sélectionner par son ID
+            // document.getElementById("nom de l'identifiant");
+            console.log( document.getElementById('title'));
+            // Recupérer le texte d'un élément html
+            console.log(title.innerText);
+            console.log(document.getElementById("title2"));
+            // Pour recuperer et le texte et le html
+            console.log(title2.innerHTML);
+            // Pour modifier le contenu du texte
+            title.innerText = "Mon nouveau titre"
+            // Pour modifier le html
+            title2.innerHTML =  '<em>Chapitre 2</em>';
+            //   Sélectionner par la class CSS
+            console.log(document.getElementsByClassName('items'));
+            // Sélectionner par la balise HTML
+            let p = document.getElementsByTagName('p');
+            console.log(p);
+            // Sélectionner avec les sélecteurs CSS
+                // sélectionner le premier élément
+                console.log(document.querySelector(".items"));
+                console.log(document.querySelectorAll("#title"));
+                // Permet de recupérer tous les éléments
+                console.log(document.querySelectorAll(".items"));
+                // 
+                let a = document.querySelector("a")
+                console.log(a.getAttribute('href'));
+                // Pour changer la destination du lien
+              
+            // Recupérer l'attribut
+            // Modifier le style CSS
+            document.querySelector("p").style.backgroundColor = ("red");
+            document.querySelector(".items").style.backgroundColor =("yellow")
+            // Recupérer la liste de class CSS d'un élément
+            document.querySelector("p").classList;
+            // Pour ajouter une class css
+            document.querySelector("p").classList.add('paragraph');
+            document.querySelector("p").style.backgroundColor=("gray");
+        
+        
+    </script>  -->
+    <script src="freeCodeCamp.js"></script>
+    <script src="test.js"></script>
+    <script src="crashcourse.js"></script>
+</body>
+
+</html>
